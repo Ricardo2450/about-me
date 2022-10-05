@@ -55,7 +55,7 @@ else if(userVideoGame === 'NO' || userVideoGame === 'N'){
   alert('Wrong choice! I been gaming since I was a kid');
 }
 else {
-  alert('Come on, how did you not answer this question?')
+  alert('Come on, how did you not answer this question?');
 }
 
 let userLearningCode = prompt('Are you learning how to code too?').toUpperCase();
@@ -68,8 +68,8 @@ else if(userLearningCode === 'NO' || userLearningCode === 'N'){
   alert('You should seriously start. Its a great skill to learn and I love it so far!');
 }
 else {
-  alert("Last question and you didn't answer! SHAME" )
+  alert("Last question and you didn't answer! SHAME" );
 }
 
-alert('Thats a little about me. Thank you ' + userName + ' for participating! Now as you enter my page. You will see some more info about me. Anyways, I hope you have a wonderful rest of your day!')
+alert('Thats a little about me. Thank you ' + userName + ' for participating! Now as you enter my page. You will see some more info about me. Anyways, I hope you have a wonderful rest of your day!');
 
