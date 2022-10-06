@@ -30,21 +30,26 @@ function veteran() {
 
 veteran();
 
-let userLives = prompt('Do I live in Arizona?').toLowerCase();
-if (userLives === 'yes' || userLives === 'y') {
-  // console.log(userLives, 'I do. So I make sure to drink water because it super hot here!');
-  alert('I do. So I make sure to drink water because it super hot here!');
-  score += 1;
-  // console.log(score);
+function lives() {
+  let userLives = prompt('Do I live in Arizona?').toLowerCase();
+  if (userLives === 'yes' || userLives === 'y') {
+    // console.log(userLives, 'I do. So I make sure to drink water because it super hot here!');
+    alert('I do. So I make sure to drink water because it super hot here!');
+    score += 1;
+    // console.log(score);
+
+  }
+  else if (userLives === 'no' || userLives === 'n') {
+    // console.log(userLives, 'Nope. I currently I do live in Arizona but I use to live in other places before.');
+    alert('Nope. I currently I do live in Arizona but I use to live in other places before.');
+  }
+  else {
+    alert('Seriously, answer the question!');
+  }
 
 }
-else if (userLives === 'no' || userLives === 'n') {
-  // console.log(userLives, 'Nope. I currently I do live in Arizona but I use to live in other places before.');
-  alert('Nope. I currently I do live in Arizona but I use to live in other places before.');
-}
-else {
-  alert('Seriously, answer the question!');
-}
+
+lives();
 
 let userBasketballTeam = prompt('Are the Phoenix suns basketball team my favorite?').toLowerCase();
 if (userBasketballTeam === 'yes' || userBasketballTeam === 'y') {
