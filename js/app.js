@@ -90,23 +90,26 @@ function videoGame() {
   }
 }
 
-videoGame();
+function learningCode() {
+  let userLearningCode = prompt('Are you learning how to code too?').toUpperCase();
+  if (userLearningCode === 'YES' || userLearningCode === 'Y') {
+    // console.log(userLearningCode, 'Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
+    alert('Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
+    score += 1;
+    // console.log(score);
 
-let userLearningCode = prompt('Are you learning how to code too?').toUpperCase();
-if (userLearningCode === 'YES' || userLearningCode === 'Y') {
-  // console.log(userLearningCode, 'Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
-  alert('Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
-  score += 1;
-  // console.log(score);
+  }
+  else if (userLearningCode === 'NO' || userLearningCode === 'N') {
+    // console.log(userLearningCode, 'You should seriously start. Its a great skill to learn and I love it so far!');
+    alert('You should seriously start. Its a great skill to learn and I love it so far!');
+  }
+  else {
+    alert('Last question and you didn\'t answer! SHAME');
+  }
+}
 
-}
-else if (userLearningCode === 'NO' || userLearningCode === 'N') {
-  // console.log(userLearningCode, 'You should seriously start. Its a great skill to learn and I love it so far!');
-  alert('You should seriously start. Its a great skill to learn and I love it so far!');
-}
-else {
-  alert('Last question and you didn\'t answer! SHAME');
-}
+learningCode();
+
 
 alert('Thats a little about me. Thank you ' + userName + ' for participating! Now as you enter my page. You will see some more info about me. Anyways, I hope you have a wonderful rest of your day!');
 
