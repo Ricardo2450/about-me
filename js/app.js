@@ -152,33 +152,38 @@ function favNumber() {
 
 favNumber();
 
-let guessAmount = 6;
+function myGames() {
+  let guessAmount = 6;
 
-let games = ['apex legends', 'stardew valley', 'pokemon unite', 'overwatch', 'war thunder', 'elden ring'];
+  let games = ['apex legends', 'stardew valley', 'pokemon unite', 'overwatch', 'war thunder', 'elden ring'];
 
-for (let i = 0; i < guessAmount; i++) {
-  let userGuess = prompt('Name a video game I like to play.').toLowerCase();
+  for (let i = 0; i < guessAmount; i++) {
+    let userGuess = prompt('Name a video game I like to play.').toLowerCase();
 
-  let guess = false;
-  for (let j = 0; j < games.length; j++) {
-    if (userGuess === games[j]) {
-      guess = true;
-      alert(`you're correct! Some other answers could have been ${games} `);
-      score += 1;
-      // console.log(score);
+    let guess = false;
+    for (let j = 0; j < games.length; j++) {
+      if (userGuess === games[j]) {
+        guess = true;
+        alert(`you're correct! Some other answers could have been ${games} `);
+        score += 1;
+        // console.log(score);
+        break;
+      }
+    }
+    if (guess === true) {
       break;
     }
-  }
-  if (guess === true) {
-    break;
-  }
-  if (guess === false) {
-    alert('Wrong guess. Try again');
-  }
-  if (i === 5 && guess === false) {
-    alert(`Sorry,you are out of guesses. Some answers were ${games}. Better luck next time.`);
+    if (guess === false) {
+      alert('Wrong guess. Try again');
+    }
+    if (i === 5 && guess === false) {
+      alert(`Sorry,you are out of guesses. Some answers were ${games}. Better luck next time.`);
+    }
   }
 }
+
+
+myGames();
 
 alert('Thanks for answering my questions. You got ' + score + ' out of ' + finalScore);
 // console.log(score)
