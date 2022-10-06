@@ -16,7 +16,7 @@ function veteran() {
   if (userVeteran === 'YES' || userVeteran === 'Y') {
     // console.log(userVeteran, 'Awesome guess. I am a Navy veteran!');
     alert('Awesome guess. I am a Navy veteran!');
-    score + 1;
+    score ++;
     // console.log(score);
   }
   else if (userVeteran === 'NO' || userVeteran === 'N') {
@@ -35,7 +35,7 @@ function lives() {
   if (userLives === 'yes' || userLives === 'y') {
     // console.log(userLives, 'I do. So I make sure to drink water because it super hot here!');
     alert('I do. So I make sure to drink water because it super hot here!');
-    score += 1;
+    score ++;
     // console.log(score);
 
   }
@@ -56,7 +56,7 @@ function basketball() {
   if (userBasketballTeam === 'yes' || userBasketballTeam === 'y') {
     // console.log(userBasketballTeam, 'Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
     alert('Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
-    score += 1;
+    score ++;
     // console.log(score);
 
   }
@@ -77,7 +77,7 @@ function videoGame() {
   if (userVideoGame === 'YES' || userVideoGame === 'Y') {
     // console.log(userVideoGame, 'BINGO!!! I love playing apex legends on the ps5.');
     alert('BINGO!!! I love playing apex legends on the ps5.');
-    score += 1;
+    score ++;
     // console.log(score);
 
   }
@@ -95,7 +95,7 @@ function learningCode() {
   if (userLearningCode === 'YES' || userLearningCode === 'Y') {
     // console.log(userLearningCode, 'Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
     alert('Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
-    score += 1;
+    score ++;
     // console.log(score);
 
   }
@@ -133,7 +133,7 @@ function favNumber() {
     else if (parseInt(userNumGuess) === myFavNumber) {
       // console.log('You got it right');
       alert('Hey, You got it right! You are amazing at guessing!');
-      score += 1;
+      score ++;
       // console.log(score);
 
       break;
@@ -165,7 +165,7 @@ function myGames() {
       if (userGuess === games[j]) {
         guess = true;
         alert(`you're correct! Some other answers could have been ${games} `);
-        score += 1;
+        score ++;
         // console.log(score);
         break;
       }
