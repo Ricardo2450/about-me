@@ -1,4 +1,4 @@
-'use strit';
+'use strict';
 
 let userName = prompt('Whats your name?');
 console.log(userName);
