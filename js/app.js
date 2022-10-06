@@ -115,38 +115,42 @@ alert('Thats a little about me. Thank you ' + userName + ' for participating! No
 
 alert('Just kidding! Lets play another game.');
 
-let myFavNumber = 8;
-let userNumberAttempt = 4;
+function favNumber() {
+  let userNumberAttempt = 4;
+  let myFavNumber = 8;
 
+  for (let userCounter = 0; userCounter < userNumberAttempt; userCounter++) {
+    let userNumGuess = prompt('What is my favorite number between 1-20? Attempts remaining' + (userCounter - userNumberAttempt));
+    // console.log(userCounter);
+    if (userNumGuess < myFavNumber) {
+      // console.log('you are to low. Try again.');
+      alert('You are to low. Try again');
+    }
+    else if (userNumGuess > myFavNumber) {
+      // console.log('You are to high. Try again');
+      alert('You are to High. Try again');
+    }
+    else if (parseInt(userNumGuess) === myFavNumber) {
+      // console.log('You got it right');
+      alert('Hey, You got it right! You are amazing at guessing!');
+      score += 1;
+      // console.log(score);
 
-for (let userCounter = 0; userCounter < userNumberAttempt; userCounter++) {
-  let userNumGuess = prompt('What is my favorite number between 1-20? Attempts remaining' + (userCounter - userNumberAttempt));
-  // console.log(userCounter);
-  if (userNumGuess < myFavNumber) {
-    // console.log('you are to low. Try again.');
-    alert('You are to low. Try again');
+      break;
+    }
+    else {
+      // console.log('Thats not a number. Please pick a number!');
+      alert('Thats not a number. Please try again and pick a number!');
+    }
+    if (userCounter === userNumberAttempt - 1) {
+      // console.log(`Sorry, you are out of attempts. You did not guess my favorite number. It was ${myFavNumber}`);
+      alert(`Sorry, you are out of attempts. You did not guess my favorite number. It was ${myFavNumber}`);
+    }
   }
-  else if (userNumGuess > myFavNumber) {
-    // console.log('You are to high. Try again');
-    alert('You are to High. Try again');
-  }
-  else if (parseInt(userNumGuess) === myFavNumber) {
-    // console.log('You got it right');
-    alert('Hey, You got it right! You are amazing at guessing!');
-    score += 1;
-    // console.log(score);
 
-    break;
-  }
-  else {
-    // console.log('Thats not a number. Please pick a number!');
-    alert('Thats not a number. Please try again and pick a number!');
-  }
-  if (userCounter === userNumberAttempt - 1) {
-    // console.log(`Sorry, you are out of attempts. You did not guess my favorite number. It was ${myFavNumber}`);
-    alert(`Sorry, you are out of attempts. You did not guess my favorite number. It was ${myFavNumber}`);
-  }
 }
+
+favNumber();
 
 let guessAmount = 6;
 
