@@ -51,21 +51,26 @@ function lives() {
 
 lives();
 
-let userBasketballTeam = prompt('Are the Phoenix suns basketball team my favorite?').toLowerCase();
-if (userBasketballTeam === 'yes' || userBasketballTeam === 'y') {
-  // console.log(userBasketballTeam, 'Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
-  alert('Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
-  score += 1;
-  // console.log(score);
+function basketball() {
+  let userBasketballTeam = prompt('Are the Phoenix suns basketball team my favorite?').toLowerCase();
+  if (userBasketballTeam === 'yes' || userBasketballTeam === 'y') {
+    // console.log(userBasketballTeam, 'Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
+    alert('Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
+    score += 1;
+    // console.log(score);
+
+  }
+  else if (userBasketballTeam === 'no' || userBasketballTeam === 'n') {
+    // console.log(userBasketballTeam, 'Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
+    alert('Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
+  }
+  else {
+    alert('No really, this is an important question to answer! So go answer it');
+  }
 
 }
-else if (userBasketballTeam === 'no' || userBasketballTeam === 'n') {
-  // console.log(userBasketballTeam, 'Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
-  alert('Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
-}
-else {
-  alert('No really, this is an important question to answer! So go answer it');
-}
+
+basketball();
 
 let userVideoGame = prompt('Do I play video games?').toUpperCase();
 if (userVideoGame === 'YES' || userVideoGame === 'Y') {
