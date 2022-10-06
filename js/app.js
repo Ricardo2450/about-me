@@ -128,7 +128,7 @@ for (let userCounter = 0; userCounter < userNumberAttempt; userCounter++) {
 
 let guessAmount = 6;
 
-let games = ['apex legends', 'stardew valley', 'pokemon unite', 'overwatch', 'war thunder'];
+let games = ['apex legends', 'stardew valley', 'pokemon unite', 'overwatch', 'war thunder', 'elden ring'];
 
 for(let i = 0; i < guessAmount; i++) {
   let userGuess = prompt('Name a video game I like to play.').toLowerCase();
