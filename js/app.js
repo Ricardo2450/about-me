@@ -1,4 +1,4 @@
-'use strit';
+'use strict';
 
 let userName = prompt('Whats your name?');
 console.log(userName);
@@ -7,33 +7,38 @@ alert('Hello ' + userName + '! Welcome to my page.');
 
 let finalScore = 7;
 let score = 0;
-score ++;
+score++;
 
 
-let userVeteran = prompt('Am I a veteran?').toUpperCase();
-if (userVeteran === 'YES' || userVeteran === 'Y') {
-  // console.log(userVeteran, 'Awesome guess. I am a Navy veteran!');
-  alert('Awesome guess. I am a Navy veteran!');
-  score + 1;
-  // console.log(score);
+
+function veteran() {
+  let userVeteran = prompt('Am I a veteran?').toUpperCase();
+  if (userVeteran === 'YES' || userVeteran === 'Y') {
+    // console.log(userVeteran, 'Awesome guess. I am a Navy veteran!');
+    alert('Awesome guess. I am a Navy veteran!');
+    score + 1;
+    // console.log(score);
+  }
+  else if (userVeteran === 'NO' || userVeteran === 'N') {
+    // console.log(userVeteran, 'Good guess but I am a veteran.');
+    alert('Good guess but I am a veteran.');
+  }
+  else {
+    alert('Please answer the question!');
+  }
 }
-else if (userVeteran === 'NO' || userVeteran === 'N') {
-  // console.log(userVeteran, 'Good guess but I am a veteran.');
-  alert('Good guess but I am a veteran.');
-}
-else {
-  alert('Please answer the question!');
-}
+
+veteran();
 
 let userLives = prompt('Do I live in Arizona?').toLowerCase();
-if(userLives === 'yes' || userLives === 'y') {
+if (userLives === 'yes' || userLives === 'y') {
   // console.log(userLives, 'I do. So I make sure to drink water because it super hot here!');
   alert('I do. So I make sure to drink water because it super hot here!');
   score += 1;
   // console.log(score);
 
 }
-else if( userLives === 'no' || userLives === 'n'){
+else if (userLives === 'no' || userLives === 'n') {
   // console.log(userLives, 'Nope. I currently I do live in Arizona but I use to live in other places before.');
   alert('Nope. I currently I do live in Arizona but I use to live in other places before.');
 }
@@ -42,14 +47,14 @@ else {
 }
 
 let userBasketballTeam = prompt('Are the Phoenix suns basketball team my favorite?').toLowerCase();
-if (userBasketballTeam === 'yes' || userBasketballTeam === 'y'){
+if (userBasketballTeam === 'yes' || userBasketballTeam === 'y') {
   // console.log(userBasketballTeam, 'Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
   alert('Heck yes!!! They are my favorite team to watch. Hope to see you at a game one day.');
   score += 1;
   // console.log(score);
 
 }
-else if(userBasketballTeam === 'no' || userBasketballTeam === 'n') {
+else if (userBasketballTeam === 'no' || userBasketballTeam === 'n') {
   // console.log(userBasketballTeam, 'Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
   alert('Wrong choice. They are my favorite and you should make them your FAVORITE too!!!');
 }
@@ -58,14 +63,14 @@ else {
 }
 
 let userVideoGame = prompt('Do I play video games?').toUpperCase();
-if (userVideoGame === 'YES' || userVideoGame === 'Y'){
+if (userVideoGame === 'YES' || userVideoGame === 'Y') {
   // console.log(userVideoGame, 'BINGO!!! I love playing apex legends on the ps5.');
   alert('BINGO!!! I love playing apex legends on the ps5.');
   score += 1;
   // console.log(score);
 
 }
-else if(userVideoGame === 'NO' || userVideoGame === 'N'){
+else if (userVideoGame === 'NO' || userVideoGame === 'N') {
   // console.log(userVideoGame, 'Wrong choice! I been gaming since I was a kid');
   alert('Wrong choice! I been gaming since I was a kid');
 }
@@ -74,19 +79,19 @@ else {
 }
 
 let userLearningCode = prompt('Are you learning how to code too?').toUpperCase();
-if(userLearningCode === 'YES' || userLearningCode === 'Y'){
+if (userLearningCode === 'YES' || userLearningCode === 'Y') {
   // console.log(userLearningCode, 'Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
   alert('Hey, same here! Remember to take breaks and its okay to fail. We will push through this together!');
   score += 1;
   // console.log(score);
 
 }
-else if(userLearningCode === 'NO' || userLearningCode === 'N'){
+else if (userLearningCode === 'NO' || userLearningCode === 'N') {
   // console.log(userLearningCode, 'You should seriously start. Its a great skill to learn and I love it so far!');
   alert('You should seriously start. Its a great skill to learn and I love it so far!');
 }
 else {
-  alert('Last question and you didn\'t answer! SHAME' );
+  alert('Last question and you didn\'t answer! SHAME');
 }
 
 alert('Thats a little about me. Thank you ' + userName + ' for participating! Now as you enter my page. You will see some more info about me. Anyways, I hope you have a wonderful rest of your day!');
@@ -100,7 +105,7 @@ let userNumberAttempt = 4;
 for (let userCounter = 0; userCounter < userNumberAttempt; userCounter++) {
   let userNumGuess = prompt('What is my favorite number between 1-20? Attempts remaining' + (userCounter - userNumberAttempt));
   // console.log(userCounter);
-  if (userNumGuess < myFavNumber){
+  if (userNumGuess < myFavNumber) {
     // console.log('you are to low. Try again.');
     alert('You are to low. Try again');
   }
@@ -130,12 +135,12 @@ let guessAmount = 6;
 
 let games = ['apex legends', 'stardew valley', 'pokemon unite', 'overwatch', 'war thunder', 'elden ring'];
 
-for(let i = 0; i < guessAmount; i++) {
+for (let i = 0; i < guessAmount; i++) {
   let userGuess = prompt('Name a video game I like to play.').toLowerCase();
 
   let guess = false;
-  for (let j = 0; j < games.length; j++){
-    if (userGuess === games[j]){
+  for (let j = 0; j < games.length; j++) {
+    if (userGuess === games[j]) {
       guess = true;
       alert(`you're correct! Some other answers could have been ${games} `);
       score += 1;
@@ -143,13 +148,13 @@ for(let i = 0; i < guessAmount; i++) {
       break;
     }
   }
-  if (guess === true){
+  if (guess === true) {
     break;
   }
-  if (guess === false){
+  if (guess === false) {
     alert('Wrong guess. Try again');
   }
-  if (i === 5 && guess === false){
+  if (i === 5 && guess === false) {
     alert(`Sorry,you are out of guesses. Some answers were ${games}. Better luck next time.`);
   }
 }
