@@ -72,21 +72,25 @@ function basketball() {
 
 basketball();
 
-let userVideoGame = prompt('Do I play video games?').toUpperCase();
-if (userVideoGame === 'YES' || userVideoGame === 'Y') {
-  // console.log(userVideoGame, 'BINGO!!! I love playing apex legends on the ps5.');
-  alert('BINGO!!! I love playing apex legends on the ps5.');
-  score += 1;
-  // console.log(score);
+function videoGame() {
+  let userVideoGame = prompt('Do I play video games?').toUpperCase();
+  if (userVideoGame === 'YES' || userVideoGame === 'Y') {
+    // console.log(userVideoGame, 'BINGO!!! I love playing apex legends on the ps5.');
+    alert('BINGO!!! I love playing apex legends on the ps5.');
+    score += 1;
+    // console.log(score);
 
+  }
+  else if (userVideoGame === 'NO' || userVideoGame === 'N') {
+    // console.log(userVideoGame, 'Wrong choice! I been gaming since I was a kid');
+    alert('Wrong choice! I been gaming since I was a kid');
+  }
+  else {
+    alert('Come on, how did you not answer this question?');
+  }
 }
-else if (userVideoGame === 'NO' || userVideoGame === 'N') {
-  // console.log(userVideoGame, 'Wrong choice! I been gaming since I was a kid');
-  alert('Wrong choice! I been gaming since I was a kid');
-}
-else {
-  alert('Come on, how did you not answer this question?');
-}
+
+videoGame();
 
 let userLearningCode = prompt('Are you learning how to code too?').toUpperCase();
 if (userLearningCode === 'YES' || userLearningCode === 'Y') {
