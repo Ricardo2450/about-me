@@ -6,6 +6,12 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Student/Group Name
 
+* Lab 04- We worked together in figuring out how to add functions to my questions in my code and call them. The navigator was tell the driver exactly what to write.
+  * Driver
+: Cody.
+  * Navigator
+   : Ricardo
+
 ### Links and Resources
 
 * [submission PR](http://xyz.com)
