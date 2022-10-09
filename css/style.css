@@ -1,52 +1,87 @@
 h1 {
-  font: size: 7rem;
-  align-self: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+  text-align: center;
 }
 
 body{
   background-color: tan;
 }
 
-p1 {
-background-color:rgba(128, 0, 0, 0.563);
-text-align: center;
+#bio {
+  height: auto;
+  margin: auto;
+  margin-top: 1rem;
+  width: 80%;
+  color:darkred ;
+  text-align:center ;
+  border: double 3px black;
+  font-size: large ;
+  
 }
 
 h2 {
   text-align: center;
   border: black;
   border-radius: 2px;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-display: bold;
+  font-size: 2rem;
+  font-style: italic;
+  color:darkred;
 }
-p2 {
+#jobs {
+  height: auto;
+  margin: auto;
+  margin-top: 1rem;
+  width: 40%;
+  border: ridge 3px black;
   text-align: center;
-  padding:3rem;
-  margin-top: 2rem;
   list-style: circle;
+  color: darkred;
 }
 
 h3{
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: darkred;
 }
 
-p3 {
+#schools {
   text-align: center;
-  height: 80%;
-  width: 50%;
-  padding: 10px;
+  height: auto;
   margin: auto;
+  margin-top: 1rem;
+  width: 40%;
+  border: ridge 3px black;
+  border-radius: 2px;
+  color: darkred;
   
 }
 h4{
   text-align: center;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: darkred;
 }
-p4 {
+#travel {
   text-align: center;
-  margin-top: 3rem;
-  padding: 3rem;
-  list-style: circle;
+  height: auto;
+  margin: auto;
+  margin-top: 1rem;
+  width: 40%;
+  border: ridge 3px black;
+  border-radius: 2px;
+  color: darkred;
+}
+
+ol li {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type:disc ;
 }
 

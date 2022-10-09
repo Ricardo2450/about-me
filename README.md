@@ -1,8 +1,6 @@
-# LAB - 2
-
 ## About me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I build a Web page highlighting a little bit about me for people to read. I also prompted a user to answer seven yes or no questions about me. At the end, they could see how well they did.
 
 ### Author: Student/Group Name
 
@@ -16,11 +14,18 @@ I build an app with a direct and powerful purpose. It does all of the things tha
   * Navigator 2
   : Aubrey 
 
+  ### Partners:
+  * Angelo
+  * Cody
+  * Aubrey
+
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* Google
+* stackoverflow
+* MDN web doc
+* w3schools
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+
+* I had a tough time getting CSS to work. Its definitely my week point. However I did overcome a few challenges and overall. I like how my page looks right now. Its basic but took me awhile to get it like that. I want to be able to do more advance stuff in the future once I have a better understanding of CSS.
